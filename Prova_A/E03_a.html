@@ -7,11 +7,18 @@
     */
 
     //ENTRADA
-
+    const atividade1 = Number(prompt("informe a nota obtida na primeira atividade:").replace(",","."));
+    const atividade2 = Number(prompt("informe a nota obtida na segunda atividade:").replace(",","."));
+    const atividade3 = Number(prompt("informe a nota obtida na terceira atividade:").replace(",","."));
 
     //PROCESSAMENTO
-
+    const resultado1 = atividade1 * 3
+    const resultado2 = atividade2 * 4
+    const resultado3 = atividade3 * 3
+    const resultado4 = resultado1 + resultado2 + resultado3
+    const resultado5 = resultado4 / 10
 
     //SAÍDA
+    document.write(`A média ponderada que o aluno obteve ao fim do trimestre foi de ${resultado5.toFixed(1).replace(".",",")}.`);
 
 </script>

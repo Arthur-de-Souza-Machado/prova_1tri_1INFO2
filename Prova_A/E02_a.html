@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-
+    const inflacao = Number(prompt("Insira inflação anual em porcentagem:").replace(",","."));
 
     //PROCESSAMENTO
+    const resultado1 = 1320 * inflacao / 100;
+    const resultado2 = Math.ceil (Number(resultado1) + 1320);
 
 
     //SAÍDA
+    document.write(`O valor do salario minimo em 2024 é de R$${resultado2.toFixed(2).replace(".",",")}.`);
 
 </script>
